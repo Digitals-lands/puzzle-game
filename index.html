@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sliding Puzzle Game</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <center>
+    <div id="video-container" style="display: block;" >
+      <video autoplay muted  id="background-video">
+        <source src="video/cinematic.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div id="image-container" style="display: none;">
+    <div >
+<img src="img/naruto.jpg" alt="" onclick="skipVideo('img/naruto.jpg')" width="600px" height="400px">
+<img src="img/demon-slayer.jpg" onclick="skipVideo('img/demon-slayer.jpg')"alt="" width="600px" height="400px">
+<br>
+<img src="img/snk.jpg" alt=""onclick="skipVideo('img/snk.jpg')" width="600px" height="400px">
+<img src="img/one-piece.jpg" onclick="skipVideo('img/one-piece.jpg')"alt="" width="600px" height="400px">
+
+
+
+    </div>
+    
+   
+    </div>
+
+
+<div id="puzzle-container" style="display: none;" >
+  <div class="puzzle-piece" id="piece1"></div>
+  <div class="puzzle-piece" id="piece2"></div>
+  <div class="puzzle-piece" id="piece3"></div>
+  <div class="puzzle-piece" id="piece4"></div>
+  <div class="puzzle-piece" id="piece5"></div>
+  <div class="puzzle-piece" id="piece6"></div>
+  <div class="puzzle-piece" id="piece7"></div>
+  <div class="puzzle-piece" id="piece8"></div>
+  <div class="puzzle-piece" id="piece9"></div>
+  <div class="puzzle-piece" id="piece10"></div>
+  <div class="puzzle-piece" id="piece11"></div>
+  <div class="puzzle-piece" id="piece12"></div>
+  <div class="puzzle-piece" id="piece13"></div>
+  <div class="puzzle-piece" id="piece14"></div>
+  <div class="puzzle-piece" id="piece15"></div>
+  <div class="puzzle-piece empty" id="piece16"></div>
+</div>
+
+<div  id="model" style="display: none;"></div>
+</center>
+<div id="attack-container" style="display: none;">
+  <video    id='background-attack'>
+    <source id='source_attack' src="" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<button id="score">
+  00:00:00
+</button>
+<button class="pass" onclick="skipVideo()">Passer</button>
+
+
+<script src="script.js"></script>
+</body>
+</html>

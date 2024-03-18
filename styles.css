@@ -1,0 +1,148 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+#puzzle-container {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border: 2px solid black;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+  button.pass {
+    padding: 5px;
+    background-color: #ccc; /* Vous pouvez remplacer par la couleur de fond souhaitée */
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    width: 100px; /* Largeur du bouton */
+    height: 100px; /* Hauteur du bouton */
+    border-radius: 50%; /* Pour rendre le bouton circulaire */
+    border: 2px solid black; /* Bordure de 4 pixels de couleur jaune */
+    background-color: #eb6b14; /* Couleur de fond jaune */
+    color: white; /* Couleur du texte en blanc */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer;
+  }
+  
+  
+  button:hover {
+    background-color: #2980b9; /* Changement de couleur de fond lors du survol */
+  }
+.puzzle-piece {
+    width: 200px;
+    height: 200px;
+    background-size: 800px 800px; /* Taille de l'image */
+    justify-content: center;
+    align-items: center;
+}
+button {
+    padding: 5px;
+    background-color: #ccc; /* Vous pouvez remplacer par la couleur de fond souhaitée */
+    position: absolute;
+    top: 10%;
+    transform: translateY(-30%);
+    width: 100px; /* Largeur du bouton */
+    height: 100px; /* Hauteur du bouton */
+    border-radius: 5%; /* Pour rendre le bouton circulaire */
+    border: 2px solid black; /* Bordure de 4 pixels de couleur jaune */
+    background-color: #2980b9; /* Couleur de fond jaune */
+    color: white; /* Couleur du texte en blanc */
+    font-size: 20px; /* Taille de la police */
+    cursor: pointer;
+  }
+#model {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    background-size: cover;
+    height: auto;
+    z-index: -1;
+}
+
+#piece1 {
+    background-position: 0px 0px;
+}
+
+#piece2 {
+    background-position: -200px 0px;
+}
+
+#piece3 {
+    background-position: -400px 0px;
+}
+
+#piece4 {
+    background-position: -600px 0px;
+}
+
+#piece5 {
+    background-position: 0px -200px;
+}
+
+#piece6 {
+    background-position: -200px -200px;
+}
+
+#piece7 {
+    background-position: -400px -200px;
+}
+
+#piece8 {
+    background-position: -600px -200px;
+}
+
+#piece9 {
+    background-position: 0px -400px;
+}
+
+#piece10 {
+    background-position: -200px -400px;
+}
+
+#piece11 {
+    background-position: -400px -400px;
+}
+
+#piece12 {
+    background-position: -600px -400px;
+}
+
+#piece13 {
+    background-position: 0px -600px;
+}
+
+#piece14 {
+    background-position: -200px -600px;
+}
+
+#piece15 {
+    background-position: -400px -600px;
+}
+
+#piece16 {
+    background-position: -600px -600px;
+    background-color: black;
+}
+
+#background-video ,#background-attack  {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    
+  }
